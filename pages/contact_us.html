@@ -8,162 +8,158 @@
     rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles2.css">
-    <style>
-        body, form, .form-class {
-            max-width: 800px;
-            display: inline-block;
-        }
+<style>
+    body, form, .form-class {
+        max-width: 800px;
+        display: inline-block;
+    }
 
-        .form-example {
-            text-align: center;
-            width: 50%;
-        }
+    .form-example {
+        text-align: center;
+        width: 40%;
+    }
 
-        footer {
-            margin-top: 5%;
-        }
+    footer {
+        margin: 0;
+        margin-top: 5%;
+    }
 
-        .footer-icons a {
-            margin: 0 10px;
-        }
+    .newsletter-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
-        .newsletter input[type="email"] {
-            width: 70%;
-        }
+    .newsletter-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+    }
 
-        .newsletter button {
-            width: 30%;
-        }
+    .newsletter-input-group {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
 
-        .navbar-nav a {
-            padding: 10px 15px;
-        }
-
-        .navbar {
-            background-color: beige;
-        }
-
-        .navbar-toggler {
-            border: none;
-        }
-
-        .navbar-collapse {
-            background-color: beige;
-        }
-
-        .navbar-brand img {
-            width: 200px;
-            height: 170px;
-        }
-
-        .navbar-nav .dropdown-menu {
-            background-color: beige;
-        }
-
-    </style>
+    .newsletter-input {
+        flex: 1;
+        margin-right: 10px;
+    }
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm navbar-light sticky-top">
-    <div class="container-fluid">
-        <a href="#" class="navbar-brand"><img src="../assets/Untitled-1.png" alt="Logo"></a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar_collapse">
-            <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link active"><i class="bi bi-house"></i> Home</a>
-                <div class="nav-item dropdown">
-                    <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-info-circle-fill"></i> About Us</a>
-                    <div class="dropdown-menu">
-                        <a href="Who _are_We.html" class="dropdown-item">Who are We</a>
-                        <a href="Mission.html" class="dropdown-item">Mission</a>
-                        <a href="Vision.Html" class="dropdown-item">Vision</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-receipt"></i> Buy</a>
-                    <div class="dropdown-menu">
-                        <a href="preselling.html" class="dropdown-item">Pre-Selling</a>
-                        <a href="RFO.html" class="dropdown-item">Ready For Occupancy</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><img src="../assets/1368166.png" width="30px" height="25px"> Sell</a>
-                    <div class="dropdown-menu">
-                        <a href="House_and_Lot.html" class="dropdown-item">House and Lot</a>
-                        <a href="Condominium.html" class="dropdown-item">Condominium</a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><img src="../assets/for_rent.png" width="30px" height="25px"> Rent</a>
-                    <div class="dropdown-menu">
-                        <a href="Short_Term.html" class="dropdown-item">Short Term</a>
-                        <a href="Long_Term.html" class="dropdown-item">Long Term</a>
-                    </div>
-                </div>
-                <a href="contact_us.html" class="nav-item nav-link"><i class="bi bi-telephone"></i> Contact Us</a>
-            </div>
+<!-- FIXED HEADER SECTION -->
+<nav class="navbar fixed-sticky navbar-expand-sm" style="background-color: beige;">
+  <div class="container-fluid">
+    <img src="../assets/Untitled-1.png" width="200px" height="170px" alt="Logo">
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse p-4" id="navbar_collapse" style="background-color: beige;">
+      <div class="navbar-nav">
+        <a href="index.html" class="nav-item nav-link active"><i class="bi bi-house"></i> Home</a>
+        <div class="nav-item dropdown">
+          <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-info-circle-fill"></i> About Us</a>
+          <div class="dropdown-menu">
+            <a href="Who _are_We.html" class="dropdown-item">Who are We</a>
+            <a href="Mission.html" class="dropdown-item">Mission</a>
+            <a href="Vision.Html" class="dropdown-item">Vision</a>
+          </div>
         </div>
-        <form class="d-flex">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <button type="submit" class="btn btn-info"><i class="bi bi-search"></i></button> 
-            </div>
-        </form>
-        <div class="navbar-nav ms-auto">
-            <a href="login.html" class="nav-item nav-link"> Log In</a>
+        <div class="nav-item dropdown">
+          <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-receipt"></i> Buy</a>
+          <div class="dropdown-menu">
+            <a href="preselling.html" class="dropdown-item">Pre-Selling</a>
+            <a href="RFO.html" class="dropdown-item">Ready For Occupancy</a>
+          </div>
         </div>
+        <div class="nav-item dropdown">
+          <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><img src="../assets/1368166.png" width="30px" height="25px" alt="Sell"> Sell</a>
+          <div class="dropdown-menu">
+            <a href="House_and_Lot.html" class="dropdown-item">House and Lot</a>
+            <a href="Condominium.html" class="dropdown-item">Condominium</a>
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <a class="nav-item nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><img src="../assets/for_rent.png" width="30px" height="25px" alt="Rent"> Rent</a>
+          <div class="dropdown-menu">
+            <a href="Short_Term.html" class="dropdown-item">Short Term</a>
+            <a href="Long_Term.html" class="dropdown-item">Long Term</a>
+          </div>
+        </div>
+        <a href="contact_us.html" class="nav-item nav-link"><i class="bi bi-telephone"></i> Contact Us</a>
+      </div> 
+    </div>   
+    <form class="d-flex">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search">
+        <button type="submit" class="btn btn-info"><i class="bi bi-search"></i></button>
+      </div>
+    </form>
+    <div class="navbar-nav ms-auto mx-5">
+      <a href="login.html" class="nav-item nav-link"> Log In</a>
     </div>
+  </div>
 </nav><br><br>  
 
-<div class="row h-100 justify-content-center align-items-center">
+<div>
+  <div class="row h-100 justify-content-center align-items-center">
     <div style="text-align:center">
-        <h2 class="text-dark">Contact Us</h2>
-        <p class="text-dark">Email or send us a message and our representative<br> will connect to you shortly.</p><br>
+      <br><h2 class="text-dark">Contact Us</h2>
+      <p class="text-dark">Email or send us a message and our representative<br> will connect to you shortly.</p><br>
     </div>
     <form class="form-example" action="" method="post">
-        <label class="my-1 form-label text-dark" for="fname">First Name</label>
-        <input class="form-control" type="text" id="firstName" name="firstName" placeholder="Your name..">
-        <label class="my-1 form-label text-dark" for="lname">Last Name</label>
-        <input class="form-control" type="text" id="lastName" name="lastName" placeholder="Your last name..">
-        <label class="my-1 form-label text-dark" for="email">Email Address</label>
-        <input class="form-control" type="email" id="email" name="email" placeholder="Your email address..">
-        <label class="my-1 form-label text-dark" for="subject">Comment or Message</label>
-        <textarea class="form-control" id="subject" name="subject" placeholder="Write something.." cols="30" rows="8"></textarea><br><br>
-        <button type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="alert('Contact Form Submitted')">Submit</button>
+      <label class="my-1 form-label text-dark" for="firstName">First Name</label>
+      <input class="form-control contact-us" type="text" id="firstName" name="firstName" placeholder="Your name..">
+      <label class="my-1 form-label text-dark" for="lastName">Last Name</label>
+      <input class="form-control contact-us" type="text" id="lastName" name="lastName" placeholder="Your last name..">
+      <label class="my-1 form-label text-dark" for="email">Email Address</label>
+      <input class="form-control contact-us" type="email" id="email" name="email" placeholder="Your email address..">
+      <label class="my-1 form-label text-dark" for="subject">Comment or Message</label>
+      <textarea class="form-control contact-us" id="subject" name="subject" placeholder="Write something.." cols="30" rows="8"></textarea><br><br>
+      <button type="submit" value="Submit" class="btn btn-primary btn-lg" onclick="alert('Contact Form Submitted')">Submit</button>
     </form>
+  </div>
 </div>
 
+<!-- FIXED FOOTER SECTION -->
 <footer class="bg-light text-center text-lg-start">
-    <div class="p-3" style="background-color: beige">
-        <section class="newsletter">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="content">
-                            <h2>Subscribed to Our Newsletter</h2>
-                            <div class="input-group">
-                                <input type="email" class="form-control" placeholder="Enter your Email">
-                                <button class="btn bg-primary" type="submit">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="content text-center">
+            <h2>Subscribe to Our Newsletter</h2>
+            <div class="input-group mt-3">
+              <input type="email" class="form-control" placeholder="Enter your Email">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </span>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="text-center p-3" style="background-color: beige">
-        © 2022 Copyright: Verg Realty All Rights Reserved
-    </div>
-
-    <div class="footer-icons p-3" style="background-color: beige">
-        <a href="https://www.facebook.com/thebestcondoguyph"><img src="../assets/facebook_logo.png" width="50px"></a>
-        <a href="https://www.instagram.com/bestcondoguyph/?hl=en"><img src="../assets/Instagram.png" width="30px" height="30px"></a>
-        <a href="https://www.linkedin.com/in/vergel-brondial-462726180/"><img src="../assets/Linkedin.png" width="40px" height="30px" style="padding-left: 10px;"></a>
-        <a href="https://twitter.com/VergeBrondial"><img src="../assets/Twitter.jpg" width="45px" height="40px" style="padding-left: 10px;"></a>
-    </div>
+  </section>
+  
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: beige">
+    © 2022 Copyright: Verg Realty All Rights Reserved
+  </div>
+  
+  <!-- Social Media Links -->
+  <div class="text-center p-3" style="background-color: beige">
+    <a href="https://www.facebook.com/thebestcondoguyph"><img src="../assets/facebook_logo.png" width="50px" alt="Facebook"></a>
+    <a href="https://www.instagram.com/bestcondoguyph/?hl=en"><img src="../assets/Instagram.png" width="30px" height="30px" alt="Instagram"></a>
+    <a href="https://www.linkedin.com/in/vergel-brondial-462726180/"><img src="../assets/Linkedin.png" width="40px" height="30px" style="margin-left: 10px;" alt="LinkedIn"></a>
+    <a href="https://twitter.com/VergeBrondial"><img src="../assets/Twitter.jpg" width="45px" height="40px" style="margin-left: 10px;" alt="Twitter"></a>
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
