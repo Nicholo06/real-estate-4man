@@ -23,4 +23,43 @@
 } .navbar-logo {
   height: 150px;
   width: auto;
+} .carouselP {
+  font-size: 50px;
+  margin-right: 30px;
+  
+} .form-control[type="search"] {
+  width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 220px;
+ 
+  border: 1px solid #ffffff;
+}
+
+.form-control[type="search"]:focus {
+  background-color: #f0f0f0;
+  border-color: #007bff;
+}
+
+/* Style the search button */
+.btn.btn-outline-light {
+  padding: 10px 20px;
+  border-radius: 220px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+}
+
+.btn.btn-outline-light:hover {
+  background-color: #0e9386;
+  border-color: #ffffff;
+}
+
+/* Style the form container */
+form.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 } 
