@@ -24,8 +24,12 @@
   height: 150px;
   width: auto;
 } .carouselP {
-  font-size: 50px;
+  font-size: 40px;
   margin-right: 30px;
+  font-family: 'Raleway', sans-serif;
+  color: #ea6e08;
+  font-weight: 100: 2px; /* For more spaced-out letters */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* X-offset, Y-offset, blur, color */
   
 } .form-control[type="search"] {
   width: 500px;
@@ -62,4 +66,4 @@ form.d-flex {
   align-items: center;
   gap: 10px;
   margin-top: 20px;
-} 
+}  
