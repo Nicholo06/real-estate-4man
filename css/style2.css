@@ -32,23 +32,7 @@
   letter-spacing: 2px; 2px 2px 4px rgba(0, 0, 0, 0.5);
 
   
-  
-  /* Join button */
-  .navbar .join-btn {                                                                      
-    padding: 10px 20px;
-    background-color: #FDDA66;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbar .join-btn:hover {
-    background-color: #0b7a6f;
-  }
-  
+  /* Navbar */
 
 
 
