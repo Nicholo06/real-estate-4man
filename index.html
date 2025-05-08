@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+      crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style2.css">
+    <style>
+      /* Custom JOIN BUTTON directly inside the head */
+      a.join-btn {
+          background-color: #FDDA66 !important;  /* Custom color */
+          color: white !important;  /* Text color */
+          border: none !important;  /* Remove border */
+      }
+  
+      a.join-btn:hover {
+          background-color: #e0dbda !important; /* Darker shade for hover */
+          color: white !important;
+      }
+      </style>
 </head>
 <body>
 <style>
@@ -97,19 +112,20 @@ navbar-nav {
       <!-- Search form -->
     
 
-      <!-- Log In -->
+      <!-- Sign in -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="pages/login.html">Log In</a>
+          <a class="nav-link" href="pages/login.html">Sign in</a>
         </li>
       </ul>
+
+      <!-- Join button -->
+        <a class="btn btn-primary join-btn" href="pages/signup.html">Join</a>
     </div>
   </div>
 </nav>
 
-
-  
-                          <!-- end -->
+      <!-- end -->
 
           <!-- Body -->
           <div class="position-absolute start-50 translate-middle-x text-center" style="top: 40%; z-index: 10; width: 100%;">
@@ -129,45 +145,55 @@ navbar-nav {
             </form>
           </div>
           
-            <!-- Carousel indicators -->
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-          
-            <!-- Carousel inner slides -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../assets/The_Albany1.png" class="d-block w-100 opacity-50" alt="...">
-                <div class="carousel-caption d-none d-md-block"></div>
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/Ayala_Parklinks2.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>This Newest Township is on the Rise</h5>
-                  <p>How to live in this green and urban community.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/NUVALI-PARK-35.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Nuvali is the Ideal Home in South</h5>
-                  <p>Consider this greenery community.</p> <!-- Fixed typo here -->
-                </div>
-              </div>
-            </div>
-          
-            <!-- Carousel controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div><br><br>
+            <!-- Carousel Start -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carousel indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div>
+
+  <!-- Carousel slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/The_Albany1.png" class="d-block w-100 opacity-50" alt="Slide 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>The Albany</h5>
+        <p>Luxury living at its finest.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/Ayala_Parklinks2.png" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Ayala Parklinks</h5>
+        <p>This newest township is on the rise.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/NUVALI-PARK-35.png" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Nuvali</h5>
+        <p>Consider this green and modern community.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel End -->
+
           
 
 <div>
