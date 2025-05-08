@@ -33,11 +33,7 @@
   color: #FFE48B;
   font-weight: 900;
   letter-spacing: 2px; 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
-
-  
-
-
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
 }.form-control[type="search"] {
   width: 500px;
