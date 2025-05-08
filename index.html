@@ -56,7 +56,7 @@ footer {
 
 <nav class="navbar navbar-expand-sm bg-light">
   <div class="container-fluid">
-    <a href="index.html" class="navbar-brand me-5">
+    <a href="index.html" class="navbar-brand me-2">
       <img src="../assets/Untitled-1.png" class="navbar-logo" alt="Logo">
     </a>
 
@@ -68,7 +68,7 @@ footer {
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <!-- About Us -->
-        <li class="nav-item dropdown me-5">
+        <li class="nav-item dropdown me-2">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="pages/Who_are_We.html">Who are We</a></li>
@@ -78,7 +78,7 @@ footer {
         </li>
 
         <!-- Buy -->
-        <li class="nav-item dropdown me-5">
+        <li class="nav-item dropdown me-2">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Buy</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../pages/preselling.html">Pre-Selling</a></li>
@@ -87,7 +87,7 @@ footer {
         </li>
 
         <!-- Sell -->
-        <li class="nav-item dropdown me-5">
+        <li class="nav-item dropdown me-2">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sell</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../pages/House_and_Lot.html">House and Lot</a></li>
@@ -96,7 +96,7 @@ footer {
         </li>
 
         <!-- Rent -->
-        <li class="nav-item dropdown me-5">
+        <li class="nav-item dropdown me-2">
           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Rent</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="pages/Short_Term.html">Short Term</a></li>
@@ -163,7 +163,7 @@ footer {
   <!-- Carousel slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/The_Albany1.png"  alt="Slide 1">
+      <img src="../assets/The_Albany1.png" class="d-block w-100" alt="Slide 1">
       <div class="carousel-caption d-none d-md-block">
         <h5>The Albany</h5>
         <p>Luxury living at its finest.</p>
@@ -200,22 +200,31 @@ footer {
           
 
 <div>
-  <h2 style="text-align: center; padding-bottom: 30px;">Featured Cities</h2>
+  <h2 Class="featured">Featured Cities</h2>
 </div>
 
 
-<div class="row container-fluid ">
-<div class="col-sm-4">
-  <div class="card text-center">
-    <img src="../assets/Iloilo_city.jpeg" width="529px" height="450px" class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title">Iloilo City</h5>
-      <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel dignissimos, asperiores necessitatibus velit corporis, 
-        eligendi voluptatem, quos consectetur odit quam iste. Mollitia repellat impedit, blanditiis iste facilis sed voluptas.</p>
-      <a href="pages/Iloilo.html" class="btn btn-primary">See More</a>
+<div class="container my-5 position-relative">
+  <div class="row">
+    <!-- Image column -->
+    <div class="col-md-6 offset-md-6">
+      <img src="../assets/Iloilo_city.jpeg" class="img-fluid rounded-4" style="height: 450px; width: 100%; object-fit: cover;">
+    </div>
+
+    <!-- Text block -->
+    <div class="col-md-6 position-absolute top-50 start-0 translate-middle-y">
+      <div class="bg-warning p-4 rounded-4" style="width: 90%;">
+        <h5>Iloilo City</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vel dignissimos, asperiores necessitatibus velit corporis, 
+          eligendi voluptatem, quos consectetur odit quam iste. Mollitia repellat impedit, blanditiis iste facilis sed voluptas.
+        </p>
+        <a href="pages/Iloilo.html" class="btn btn-primary">See More</a>
+      </div>
     </div>
   </div>
-  </div>
+</div>
+
 
 
   <div class="col-sm-4">

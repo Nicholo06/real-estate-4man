@@ -21,7 +21,7 @@
     width: 200px;
     height: 170px;
 } .navbar-logo {
-  height: 100px;
+  height: 110px;
   padding-left: 20px;
   padding-right: 20px;
   width: auto;
@@ -66,4 +66,13 @@ form.d-flex {
   align-items: center;
   gap: 10px;
   margin-top: 20px;
-}  
+}  .featured {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+} .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+ margin-top: 1px;
+ margin-bottom: 1px;
+}
