@@ -75,4 +75,41 @@ form.d-flex {
   padding-bottom: 0;
  margin-top: 1px;
  margin-bottom: 1px;
+} .big-card img,
+  .small-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .big-card .card,
+  .small-card .card {
+    height: 100%;
+    overflow: hidden;
+    border: none;
+    position: relative;
+  }
+
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .small-card .card-overlay {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  } 
+.big-card .card {
+  height:365px; /* adjust this value to your liking */
+}
+.big-card img {
+  height: 100%;
 }
