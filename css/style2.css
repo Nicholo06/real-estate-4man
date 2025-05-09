@@ -112,4 +112,16 @@ form.d-flex {
 }
 .big-card img {
   height: 100%;
+} .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* dark background */
+  border-radius: 50%;
+  padding: 20px;
+  background-size: 100% 100%;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* wider area for easier click */
+}
+
