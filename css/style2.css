@@ -201,4 +201,43 @@ footer {
   flex-shrink: 0;
   white-space: nowrap;
 }
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11; /* Ensure it stays above carousel images */
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+} .social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon.facebook { color: #3b5998; }
+.social-icon.x-twitter { color: #000000; } /* X logo color */
+.social-icon.instagram { color: #e1306c; }
+.social-icon.linkedin { color: #0077b5; }
+
+.social-icon:hover {
+  background-color: #007bff;
+  color: white;
+}
+
 
