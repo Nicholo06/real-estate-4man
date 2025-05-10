@@ -1,44 +1,66 @@
+/* Adjust body styling for all screen sizes */
+body {
+  text-align: center;
+}
 
+/* Media query for max-width: 500px for mobile view */
 @media all and (max-width: 500px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-
-  
   body {
-    text-align: center;
-
+    background-color: lightblue;
   }
 
-  form {
-    display: inline-block ;
-
+  /* Adjust font size and margin for small screens */
+  .carouselP {
+    font-size: 20px;
+    margin-right: 10px;
   }
 
-  .my-div {
-    background-image: url("assets/Untitled-1.png");
-    width: 200px;
-    height: 170px;
-} .navbar-logo {
-  height: 110px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: auto;
+  /* Modify the search bar for mobile */
+  .form-control[type="search"] {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
 
-} .carouselP {
-  font-size: 40px;
-  margin-right: 30px;
-  font-family: 'Roboto', sans-serif;
-  color: #FFE48B;
-  font-weight: 900;
-  letter-spacing: 2px; 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  .btn.btn-outline-light {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
 
-}.form-control[type="search"] {
-  width: 500px;
-  padding: 11px;
-  padding-left: 30px;
+/* Media query for max-width: 576px (small devices) */
+@media (max-width: 576px) {
+  .carouselP {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  /* Styling for search bar */
+  .form-control[type="search"] {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  /* Adjust button padding and font size for small screens */
+  .btn.btn-outline-light {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Styling for the search button */
+.btn.btn-outline-light {
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: #FFE48B;
+  color: rgb(0, 0, 0);
+  border: 1px solid #FFE48B;
+}
+
+/* Customize the form control (search input) */
+.form-control[type="search"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 11px 30px;
   font-size: 16px;
   border-radius: 15px;
   border: 1px solid #ffffff;
@@ -49,70 +71,94 @@
   border-color: #000000;
 }
 
-/* Style the search button */
-.btn.btn-outline-light {
-  padding: 10px 20px;
-  border-radius: 15px;
-  background-color: #FFE48B;
-  color: rgb(0, 0, 0);
-  border: 1px solid #FFE48B;
+/* Adjust styling for carouselP (carousel text) */
+.carouselP {
+  font-size: 40px;
+  margin-right: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #FFE48B;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-/* Style the form container */
+/* Align the search bar form */
 form.d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 20px;
-}  .featured {
+}
+
+/* Navbar logo styling */
+.navbar-logo {
+  height: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+}
+
+/* Featured section styling */
+.featured {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
-} .navbar {
+}
+
+/* Navbar padding */
+.navbar {
   padding-top: 0;
   padding-bottom: 0;
- margin-top: 1px;
- margin-bottom: 1px;
-} .big-card img,
-  .small-card img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-  }
-
-  .big-card .card,
-  .small-card .card {
-    height: 100%;
-    overflow: hidden;
-    border: none;
-    position: relative;
-  }
-
-  .card-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .small-card .card-overlay {
-    font-size: 0.9rem;
-    padding: 0.75rem;
-  } 
-.big-card .card {
-  height:365px; /* adjust this value to your liking */
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
+
+/* Styling for the big and small card images */
+.big-card img,
+.small-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Card styling */
+.big-card .card,
+.small-card .card {
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.small-card .card-overlay {
+  font-size: 0.9rem;
+  padding: 0.75rem;
+}
+
+.big-card .card {
+  height: 365px; /* adjust this value to your liking */
+}
+
 .big-card img {
   height: 100%;
-} .carousel-control-prev-icon,
+}
+
+/* Carousel control icons (prev/next buttons) */
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5); /* dark background */
   border-radius: 50%;
@@ -125,3 +171,21 @@ form.d-flex {
   width: 5%; /* wider area for easier click */
 }
 
+/* Join button styles */
+a.join-btn {
+  background-color: #FDDA66 !important;
+  color: white !important;
+  border: none !important;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+a.join-btn:hover {
+  background-color: #e0dbda !important; /* Darker shade for hover */
+  color: white !important;
+}
+
+/* Footer padding */
+footer {
+  padding-top: 10%;
+}

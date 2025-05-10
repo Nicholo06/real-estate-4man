@@ -20,28 +20,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-IQsoLXlHjLkG6GOXk3eDWv3+gJ2R9a4eoO1Y37npOa+H5P1P6jizoEho6nYbxF27" crossorigin="anonymous"></script>
     <style>
       /* Custom JOIN BUTTON directly inside the head */
-      a.join-btn {
-          background-color: #FDDA66 !important;  /* Custom color */
-          color: white !important;  /* Text color */
-          border: none !important;  /* Remove border */
-          padding-left: 20px;
-          padding-right: 20px;
-      }
+    
   
-      a.join-btn:hover {
-          background-color: #e0dbda !important; /* Darker shade for hover */
-          color: white !important;
-      }
-      </style>
-</head>
-<body>
-<style>
-
-footer {
-
-  padding-top: 10%;
-
-}
+      
 
 
 @media all and (max-width: 500px) {
@@ -57,7 +38,10 @@ footer {
 
   }
 
-</style>
+      </style>
+</head>
+<body>
+
 
 <nav class="navbar navbar-expand-sm bg-light">
   <div class="container-fluid">
@@ -78,7 +62,7 @@ footer {
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="pages/Who_are_We.html">Who are We</a></li>
             <li><a class="dropdown-item" href="pages/Mission.html">Mission</a></li>
-            <li><a class="dropdown-item" href="pages/Vision.Html">Vision</a></li>
+            <li><a class="dropdown-item" href="pages/Vision.html">Vision</a></li>
           </ul>
         </li>
 
@@ -130,32 +114,29 @@ footer {
   </div>
 </nav>
 
-      <!-- end -->
+ <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="3000">
+  
+  <!-- Overlay Content -->
+  <div class="position-absolute top-30 start-50 translate-middle-x text-center px-2 w-100" style="z-index: 10;">
+    <div class="d-flex flex-wrap justify-content-center gap-3 mb-2">
+      <span class="carouselP">AGENTS</span>
+      <span class="carouselP">TOURS</span>
+      <span class="carouselP">LOANS</span>
+      <span class="carouselP">HOMES</span>
+    </div>
 
-          <!-- Body -->
-          <div class="position-absolute start-50 translate-middle-x text-center" style="top: 30%; z-index: 10; width: 100%;">
-            <div>
-              <span class="carouselP">AGENTS</span>
-              <span class="carouselP">TOURS</span>
-              <span class="carouselP">LOANS</span>
-              <span class="carouselP">HOMES</span>
-            </div>
+    <!-- Search Bar -->
+    <form class="d-flex justify-content-center mt-2">
+      <div class="input-group w-100 w-md-75 w-lg-50">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
 
-            <!-- Search bar -->
-            <form class="d-flex justify-content-center mt-3">
-              <div class="input-group w-50">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-        
-          
-            <!-- Carousel Start -->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-  <!-- Carousel indicators -->
+  <!-- Indicators -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
       aria-current="true" aria-label="Slide 1"></button>
@@ -165,41 +146,43 @@ footer {
       aria-label="Slide 3"></button>
   </div>
 
-  <!-- Carousel slides -->
+  <!-- Carousel Items -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-     <img src="../assets/The_Albany1.png" class="d-block w-100" alt="Slide 2">
-      <div class="carousel-caption d-none d-md-block w-100 bottom-0 start-0 position-absolute bg-dark bg-opacity-50 py-3 px-4">
+      <img src="../assets/The_Albany1.png" class="d-block w-100 img-fluid" alt="The Albany">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 py-3 px-4 w-100 position-absolute bottom-0 start-0">
         <h5>The Albany</h5>
         <p>Luxury living at its finest.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/Ayala_Parklinks2.png" class="d-block w-100" alt="Slide 2">
-      <div class="carousel-caption d-none d-md-block w-100 bottom-0 start-0 position-absolute bg-dark bg-opacity-50 py-3 px-4">
+      <img src="../assets/Ayala_Parklinks2.png" class="d-block w-100 img-fluid" alt="Ayala Parklinks">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 py-3 px-4 w-100 position-absolute bottom-0 start-0">
         <h5>Ayala Parklinks</h5>
         <p>This newest township is on the rise.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../assets/NUVALI-PARK-35.png" class="d-block w-100" alt="Slide 3">
-      <div class="carousel-caption d-none d-md-block w-100 bottom-0 start-0 position-absolute bg-dark bg-opacity-50 py-3 px-4">
+      <img src="../assets/NUVALI-PARK-35.png" class="d-block w-100 img-fluid" alt="Nuvali">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 py-3 px-4 w-100 position-absolute bottom-0 start-0">
         <h5>Nuvali</h5>
         <p>Consider this green and modern community.</p>
       </div>
     </div>
   </div>
 
-  <!-- Carousel controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
+
+<!-- Controls -->
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+
 <!-- Carousel End -->
 
           
@@ -345,42 +328,26 @@ footer {
 </div>
 
 <footer class="bg-light text-center text-lg-start">
-  
-<div class="text-center p-3" style="background-color: #FFEAA5">
-  <section class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-" style="padding-left: 450px; width: 70%;">
-          <div class="content">
-            <h2 style="justify-content: center; padding-right: 50px;">
-              Join Our Newsletter
-              <i class="fas fa-envelope" style="font-size: 24px; color: #007bff;"></i>
-            </h2>
+  <div class="text-center p-3" style="background-color: #FFEAA5">
+    <section class="newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-8">
+            <div class="content">
+              <h2>
+                Join Our Newsletter
+                <i class="fas fa-envelope" style="font-size: 24px; color: #007bff;"></i>
+              </h2>
               <div class="input-group">
-                <input type="email" class="form-control" name="" placeholder="Enter your Email" style="width: 30%;">
-                  </div>
-                    <span class="input-group-btn">
-                    <button class="btn w-50 m-3" type="submit" style="background-color: #ffffff; color: #007bff; border: 1px solid #ffffff;">Submit</button>
-                    </span>
-                  </div>
+                <input type="email" class="form-control" placeholder="Enter your email" aria-label="Recipient's email" required>
+                <button class="btn btn-primary" type="submit">Subscribe</button>
               </div>
+            </div>
           </div>
-        </div>  
-    </div>
-  </section>
-<div>
-  
-  <div class="text-center p-3" style="background-color: #FFEAA5">
-    © 2022 Copyright: Verg Realty All Rights Reserved
+        </div>
+      </div>
+    </section>
   </div>
-
-
-  <div class="text-center p-3" style="background-color: #FFEAA5">
-    <a href="https://www.facebook.com/thebestcondoguyph"><img src="../assets/facebook_logo.png" width="50px"></a>
-    <a href="https://www.instagram.com/bestcondoguyph/?hl=en"><img src="../assets/Instagram.png" width="30px" height="30px"></a>
-    <a href="https://www.linkedin.com/in/vergel-brondial-462726180/"><img src="../assets/Linkedin.png" width="40px" height="30px" style="padding-left: 10px;"></a>
-    <a href="https://twitter.com/VergeBrondial"><img src="../assets/Twitter.jpg" width="45px" height="40px" style="padding-left: 10px;"></a>
-</div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
