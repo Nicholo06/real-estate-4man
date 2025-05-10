@@ -188,4 +188,17 @@ a.join-btn:hover {
 /* Footer padding */
 footer {
   padding-top: 10%;
+} .input-group {
+  flex-wrap: nowrap;
 }
+
+.input-group .form-control {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.input-group .btn {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
