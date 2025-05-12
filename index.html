@@ -120,7 +120,7 @@
 
  <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="3000">
 
-  <!-- Overlay Content -->
+  <!-- Overlay Content (titles + search bar) -->
   <div class="position-absolute top-30 start-50 translate-middle-x text-center px-2 w-100" style="z-index: 10;">
     <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
       <span class="carouselP">AGENTS</span>
@@ -128,30 +128,24 @@
       <span class="carouselP">LOANS</span>
       <span class="carouselP">HOMES</span>
     </div>
-
-    <!-- Responsive Search Bar -->
     <form class="d-flex justify-content-center w-100 px-2 mt-2">
-  <div class="input-group" style="max-width: 600px; width: 100%;">
-    <input type="search" class="form-control" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-light" type="submit">
-      <i class="bi bi-search"></i>
-    </button>
+      <div class="input-group" style="max-width: 600px; width: 100%;">
+        <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
+    </form>
   </div>
-</form>
 
-  </div>
-
-  <!-- Carousel Indicators -->
+  <!-- Indicators -->
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-      aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-      aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-      aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
 
-  <!-- Carousel Items -->
+  <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/The_Albany1.png" class="d-block w-100 img-fluid" alt="The Albany">
@@ -175,18 +169,18 @@
       </div>
     </div>
   </div>
-</div>
 
-
-<!-- Carousel Controls (Inside carousel) -->
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+  <!-- ✅ Controls INSIDE the carousel -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="z-index: 11;">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="z-index: 11;">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
+
 
 
 <!-- Carousel End -->
