@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style2.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzS3lA4coELvOMVrjIEaFf/nJGzIxFDsf4x0xIM+B07j" crossorigin="anonymous"></script>
@@ -48,7 +50,7 @@
 
 
 <nav class="navbar navbar-expand-sm bg-light">
-  <div class="container-fluid">
+  <div class="container-fluid" data-aos="fade-down" data-aos-delay="200">
     <a href="index.html" class="navbar-brand me-2">
       <img src="../assets/Untitled-1.png" class="navbar-logo" alt="Logo">
     </a>
@@ -106,30 +108,32 @@
     
 
       <!-- Sign in -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="pages/login.html">Sign in</a>
-        </li>
-      </ul>
+      
+<ul class="navbar-nav">
+  <li class="nav-item me-2"> <!-- Add spacing -->
+    <a class="nav-link" href="pages/login.html">Sign in</a>
+  </li>
+</ul>
 
-      <!-- Join button -->
-        <a class="btn btn-primary join-btn" href="pages/signup.html">Join</a>
+<!-- Join button -->
+<a class="btn btn-primary join-btn me-2" href="pages/signup.html">Join</a> <!-- Add spacing -->
+
     </div>
   </div>
 </nav>
 
- <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="3000">
+ <div id="carouselExampleCaptions" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="3000" data-aos="fade-down" data-aos-delay="200" >
 
   <!-- Overlay Content (titles + search bar) -->
   <div class="position-absolute top-30 start-50 translate-middle-x text-center px-2 w-100" style="z-index: 10;">
-    <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-2" data-aos="fade-down" data-aos-delay="200">
       <span class="carouselP">AGENTS</span>
       <span class="carouselP">TOURS</span>
       <span class="carouselP">LOANS</span>
       <span class="carouselP">HOMES</span>
     </div>
     <form class="d-flex justify-content-center w-100 px-2 mt-2">
-      <div class="input-group" style="max-width: 600px; width: 100%;">
+      <div class="input-group" style="max-width: 600px; width: 100%;" data-aos="fade-down" data-aos-delay="200">
         <input type="search" class="form-control" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">
           <i class="bi bi-search"></i>
@@ -139,7 +143,7 @@
   </div>
 
   <!-- Indicators -->
-  <div class="carousel-indicators">
+  <div class="carousel-indicators" data-aos="fade-down" data-aos-delay="200">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -171,11 +175,11 @@
   </div>
 
   <!-- ✅ Controls INSIDE the carousel -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="z-index: 11;">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="z-index: 11;" data-aos="fade-down" data-aos-delay="200">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="z-index: 11;">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="z-index: 11; data-aos="fade-down" data-aos-delay="200"">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -186,20 +190,20 @@
 <!-- Carousel End -->
 
 <div>
-  <h2 Class="featured">Featured Cities</h2>
+  <h2 class="featured" data-aos="fade-up">Featured Cities</h2>
 </div>
 
 
 <!-- ILOILO CITY -->
-<div class="container my-5 position-relative">
+<div class="container my-5 position-relative" data-aos="fade-up">
   <div class="row">
     <!-- Image column -->
-    <div class="col-md-6 offset-md-6">
+    <div class="col-md-6 offset-md-6" data-aos="fade-up">
       <img src="../assets/Iloilo_city.jpeg" class="img-fluid rounded-4" style="height: 450px; width: 100%; object-fit: cover;">
     </div>
 
     <!-- Mobile Text Block -->
-    <div class="col-12 d-block d-md-none mt-3">
+    <div class="col-12 d-block d-md-none mt-3" data-aos="fade-up">
       <div class="p-4 rounded-4" style="background-color: #FFEAA5; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);">
         <h5>Iloilo City</h5>
         <p style="font-size:1.2rem;">
@@ -210,8 +214,8 @@
       </div>
     </div>
 
-    <!-- Desktop Text Block -->
-    <div class="col-md-7 position-absolute top-50 translate-middle-y d-none d-md-block" style="left: 5%;">
+    <!-- Desktop Text Block sap my  -->
+    <div class="col-md-7 position-absolute top-50 translate-middle-y d-none d-md-block" style="left: 5%;" data-aos="fade-up">
       <div class="p-4 rounded-4" style="width: 90%; background-color: #FFEAA5; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);">
         <h5>Iloilo City</h5>
         <p style="font-size:1.2rem;">
@@ -225,15 +229,15 @@
 </div>
 
 <!-- BONIFACIO GLOBAL CITY -->
-<div class="container my-5 position-relative">
+<div class="container my-5 position-relative" data-aos="fade-up">
   <div class="row">
     <!-- Image column -->
-    <div class="col-md-6">
+    <div class="col-md-6" data-aos="fade-up">
       <img src="../assets/bonifacio-high-street.PNG" class="img-fluid rounded-4" style="height: 450px; width: 100%; object-fit: cover;">
     </div>
 
     <!-- Mobile Text Block -->
-    <div class="col-12 d-block d-md-none mt-3">
+    <div class="col-12 d-block d-md-none mt-3" data-aos="fade-up">
       <div class="p-4 rounded-4" style="background-color: #FFEAA5; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);">
         <h5>Bonifacio Global City</h5>
         <p>
@@ -245,7 +249,7 @@
     </div>
 
     <!-- Desktop Text Block -->
-    <div class="col-md-7 offset-md-5 position-absolute top-50 translate-middle-y d-none d-md-block">
+    <div class="col-md-7 offset-md-5 position-absolute top-50 translate-middle-y d-none d-md-block" data-aos="fade-up">
       <div class="p-4 rounded-4" style="width: 90%; background-color: #FFEAA5; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);">
         <h5>Bonifacio Global City</h5>
         <p>
@@ -259,7 +263,7 @@
 </div>
 
 <!-- CEBU CITY -->
-<div class="container my-5 position-relative">
+<div class="container my-5 position-relative" data-aos="fade-up">
   <div class="row">
     <!-- Image column -->
     <div class="col-md-6 offset-md-6">
@@ -267,7 +271,7 @@
     </div>
 
     <!-- Mobile Text Block -->
-    <div class="col-12 d-block d-md-none mt-3">
+    <div class="col-12 d-block d-md-none mt-3"data-aos="fade-up">
       <div class="p-4 rounded-4" style="background-color: #FFEAA5; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);">
         <h5>Cebu City</h5>
         <p>
@@ -279,7 +283,7 @@
     </div>
 
     <!-- Desktop Text Block -->
-    <div class="col-md-7 position-absolute top-50 translate-middle-y d-none d-md-block" style="left: 3%;">
+    <div class="col-md-7 position-absolute top-50 translate-middle-y d-none d-md-block" style="left: 3%;" data-aos="fade-up">
       <div class="p-4 rounded-4" style="width: 90%; background-color: #FFEAA5; box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);">
         <h5>Cebu City</h5>
         <p>
@@ -300,11 +304,11 @@
 
 
   <div>
-    <h2 style="text-align: center; padding-top: 30px; padding-bottom: 30px;">Real Estate News</h2>
+    <h2 style="text-align: center; padding-top: 30px; padding-bottom: 30px;" data-aos="fade-up">Real Estate News</h2>
   </div>
 
   
-<div class="container-fluid py-4">
+<div class="container-fluid py-4" data-aos="fade-up">
   <div class="row g-4">
     <!-- Big card on the left -->
     <div class="col-lg-8">
@@ -365,23 +369,23 @@
   </div>
 </div>
 
-<footer class="bg-light text-center text-lg-start">
-  <div class="text-center p-3" style="background-color: #FFEAA5">
+<footer class="bg-light text-center text-lg-start" data-aos="fade-up">
+  <div class="text-center p-3" style="background-color: #FFEAA5" data-aos="fade-up">
     <section class="newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-8">
             <div class="content">
-              <h2>
+              <h2 data-aos="fade-up">
                 Join Our Newsletter
                 <i class="fas fa-envelope" style="font-size: 24px; color: #007bff;"></i>
               </h2>
-              <div class="input-group justify-content-center mb-3">
+              <div class="input-group justify-content-center mb-3" data-aos="fade-up">
                 <input type="email" class="form-control w-50" placeholder="Enter your Email Address" required>
               </div>
-              <button class="btn btn-light rounded-pill px-4 shadow-sm mb-4">Submit</button>
+              <button class="btn btn-light rounded-pill px-4 shadow-sm mb-4" data-aos="fade-up">Submit</button>
               <!-- Social Media Icons -->
-              <div class="d-flex justify-content-center gap-4">
+              <div class="d-flex justify-content-center gap-4" data-aos="fade-up">
                 <a href="#" class="social-icon" style="color: #1877f2;"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social-icon" style="color: #1da1f2;"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="social-icon" style="color: #0077b5;"><i class="fab fa-linkedin-in"></i></a>
@@ -401,6 +405,14 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, // controls animation speed
+    once: true     // animate only the first time you scroll
+  });
+</script>
+
 </body>
 </html>
 
