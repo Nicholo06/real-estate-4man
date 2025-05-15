@@ -73,6 +73,7 @@ body {
 
 /* Adjust styling for carouselP (carousel text) */
 .carouselP {
+  padding-top: 20px;
   font-size: 40px;
   margin-right: 30px;
   font-family: 'Roboto', sans-serif;
@@ -251,5 +252,6 @@ footer {
   /* Optional: Ensure the carousel itself stays below the navbar */
   #carouselExampleCaptions {
     z-index: 1; /* Lower z-index for the carousel */
-  } 
+  }
+
 
