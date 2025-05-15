@@ -251,6 +251,5 @@ footer {
   /* Optional: Ensure the carousel itself stays below the navbar */
   #carouselExampleCaptions {
     z-index: 1; /* Lower z-index for the carousel */
-  }
-
+  } 
 
