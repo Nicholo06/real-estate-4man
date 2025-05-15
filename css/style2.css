@@ -186,6 +186,14 @@ a.join-btn:hover {
   color: white !important;
 }
 
+/* See more button */
+a.btn-primary {
+  background-color: white;
+  color: black;
+  border: 1px solid #ffffff;
+}
+
+
 /* Footer padding */
 footer {
   padding-top: 10%;
